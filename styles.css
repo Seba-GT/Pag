@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -7,9 +8,17 @@ body {
     background-color: #000;
 }
 
-h1 {
+h1, h3 {
     color: #ff0000;
-    font-size: 3em;
-    text-align: center;
     font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 0.5em; /* Añadir un margen superior para separar los textos */
 }
