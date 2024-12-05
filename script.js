@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     alert('¡Fuiste hackeado!');
 
-    // Cambiar el color de fondo rápidamente
+    // Cambiar el color de fondo cada segundo
     setInterval(function() {
         document.body.style.backgroundColor = getRandomColor();
-    }, 100);
+    }, 1000);
 
     // Reproducir un sonido
     var audio = new Audio('https://www.soundjay.com/button/beep-07.wav');
