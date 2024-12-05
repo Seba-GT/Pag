@@ -6,5 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Reproducir un sonido
     var audio = new Audio('https://www.soundjay.com/button/beep-07.wav');
-    audio.play();
+    audio.addEventListener('canplaythrough', function() {
+        audio.play();
+    });
 });
